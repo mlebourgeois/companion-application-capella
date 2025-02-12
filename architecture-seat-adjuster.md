@@ -6,16 +6,16 @@ When starting the development of an application such as this one, you can use th
 
 The companion application developed in this blueprint is a seat adjuster. The main user need here is to adapt the seat position based on a client's request. This user need is identified during the Operational Analysis stage in Capella which, for this tutorial, can be summarized by the following simple Operational Architecture Diagram:
 
-![image](https://github.com/user-attachments/assets/08a7e405-ae9b-428f-9934-32863ae82d51)
+![Operational analysis](./img/operational-architecture-blank.png)
 
 While defining the application's own capabilities in Capella's System Analysis level, we also determine that the application can accept or refuse the request in certain conditions, for instance, while the vehicle is moving. 
 The diagram below from the Capella model represents these features at system level (the full Capella model can be found in folder "Seat adjuster application architecture").
 
-![image](https://github.com/user-attachments/assets/cc6539fe-66f9-4da4-abf6-e39ba255be93)
+![System analysis](./img/system-architecture-blank.png)
 
 After defining the application's functions in the System Analysis perspective of Arcadia, the Logical and Physical Architecture perspectives helps design and define an architecture that enables the realization of these functions. The Physical Architecture Diagram below represent the final architecture, with the components and interfaces defined during the analysis:
 
-![image](https://github.com/user-attachments/assets/d77afc06-1b22-4528-afc7-4efb2850f2f8)
+![Physical architecture](./img/physical-architecture-blank.png)
 
 
 The seat adjuster application interacts with the vehicle through a *Vehicle Abstraction Layer* created by the KUKSA Databroker,
