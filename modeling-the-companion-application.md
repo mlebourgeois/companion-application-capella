@@ -73,6 +73,7 @@ The goal of the Physical Architecture is to extensively describe the final solut
 ![Physical architecture](./img/physical-architecture-blank.png)
 
 
+
 The next step is to [start developing the application with Eclipse Velocitas](./deploy-seat-adjuster.md).
 
 
