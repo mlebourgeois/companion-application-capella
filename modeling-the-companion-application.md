@@ -73,48 +73,8 @@ The goal of the Physical Architecture is to extensively describe the final solut
 ![Physical architecture](./img/physical-architecture-blank.png)
 
 
-The seat adjuster application interacts with the vehicle through a *Vehicle Abstraction Layer* created by the KUKSA Databroker,
-which uses the [Vehicle Signal Specification (VSS)](https://covesa.github.io/vehicle_signal_specification/)
-to express the current value and in case of actuators also the desired state of the vehicle signal.
-By developing against the abstraction layer, the application becomes independent from the actual physical seat.
 
-To control the position of the driver seat, the seat adjuster sets the target value of the `Vehicle.Cabin.Seat.Row1.Pos1.Position` signal in the KUKSA Databroker.
-
-The architecture assumes so-called actuation providers that apply the changes to the actual vehicle as indicated in the target value, e.g.,
-through interaction with the responsible ECUs.
-For this tutorial, we do not expect you to interface with an actual vehicle and thus abstract the vehicle by using the Kuksa.Val vehicle mock service.
-This vehicle mock service allows the definition of behavior toward the KUKSA Databroker like we would expect from the vehicle, for example,
-setting the current value after reacting to changes to the target value of a signal.
-
-```mermaid
-flowchart TB
-    client[Client]
-    anotherClient[Another Client]
-    seatadjuster[Seat Adjuster]
-    databroker[(KUKSA<br>Databroker)]
-    mqttRequest[[MQTT topic<br>seatadjuster/setPosition/request]]
-    mockservice[Provider: Mock Service]
-
-    client -- "JSON Request: position, requestId" --> mqttRequest
-    anotherClient -.-> mqttRequest
-    mqttRequest --> seatadjuster
-    seatadjuster -- "Set Target<br>Vehicle.Cabin.Seat.Row1.Pos1.Position<br>gRPC" --> databroker
-    databroker <-- "Set Current<br>Vehicle.Cabin.Seat.Row1.Pos1.Position<br><br>Notify subscriber of changed target<br>Vehicle.Cabin.Seat.Row1.Pos1.Position" --> mockservice
-```
-
-As interface to the user, we assume a **client** that can, for example, be a local app in the infotainment domain with a user interface
-or an off-board application sending the request from a backend.
-Either way, the client controls our seat adjuster application through a JSON encoded message over MQTT using the topic `setPosition/request`.
-
-An example request looks like this:
-
-```bash
-mosquitto_pub -t seatadjuster/setPosition/request 
-    -m '{"position": 1000, "requestId": "12345"}'
-```
-
-The position parameter can be any value between 0 and 1000.
-
+The next step is to [start developing the application with Eclipse Velocitas](./deploy-seat-adjuster.md).
 
 
 
