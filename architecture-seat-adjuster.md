@@ -1,5 +1,23 @@
 # Architecture of Companion Application
 
+## High-level architecture design with Capella
+
+When starting the development of an application such as this one, you can use the MBSE tool Eclipse Capella to help designing its architecture. In this tutorial, we provide a Capella model to illustrate how the tool, with the Systems Engineering methodology it embeds, can help you to identify needs and define a suitable architecture from there. For more information on Eclipse Capella and how to open the provided model, you can refer to the [dedicated section](./how-to-open-capella-model.md)
+
+The companion application developed in this blueprint is a seat adjuster. The main user need here is to adapt the seat position based on a client's request. This user need is identified during the Operational Analysis stage in Capella which, for this tutorial, can be summarized by the following simple Operational Architecture Diagram:
+
+![Operational analysis](./img/operational-architecture-blank.png)
+
+While defining the application's own capabilities in Capella's System Analysis level, we also determine that the application can accept or refuse the request in certain conditions, for instance, while the vehicle is moving. 
+The diagram below from the Capella model represents these features at system level (the full Capella model can be found in folder "Seat adjuster application architecture").
+
+![System analysis](./img/system-architecture-blank.png)
+
+After defining the application's functions in the System Analysis perspective of Arcadia, the Logical and Physical Architecture perspectives helps design and define an architecture that enables the realization of these functions. The Physical Architecture Diagram below represent the final architecture, with the components and interfaces defined during the analysis:
+
+![Physical architecture](./img/physical-architecture-blank.png)
+
+
 The seat adjuster application interacts with the vehicle through a *Vehicle Abstraction Layer* created by the KUKSA Databroker,
 which uses the [Vehicle Signal Specification (VSS)](https://covesa.github.io/vehicle_signal_specification/)
 to express the current value and in case of actuators also the desired state of the vehicle signal.
@@ -76,4 +94,4 @@ flowchart TD
     mqttResponse -.-> anotherClient
 ```
 
-The next step is to [model the Companion application architecture with Eclipse Capella](./modeling-the-companion-application.md).
+The next step is to [develop the seat adjuster with the help of Eclipse Velocitas](./develop-seat-adjuster.md).
