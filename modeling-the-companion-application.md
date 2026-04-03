@@ -36,19 +36,21 @@ When starting the development of an application such as this one, you can use th
 
 ### Operational Analysis
 
-The companion application developed in this blueprint is a seat adjuster. The main user need here is to adapt the seat position based on a client's request. In the Arcadia methodology, this user need is captured in the Operational analysis, along with the main actors, i.e. stakeholders of the considered cases.
+The companion application developed in this blueprint is a seat adjuster. The main user need here is to adapt the seat position based on a client's request. In the Arcadia methodology, this requirement is captured in the Operational analysis, along with the main actors, i.e. stakeholders of the considered cases, who will interact with the system to achieve missions, goals and objectives.
 
-The Operational Analysis for this tutorial, identifies two Operational entities: A user wanting to adapt the position of the seat, and the vehicle that must react to the user's input. The analysis can be summarized by the Operational Architecture Diagram shown below. Note that, at this stage, the scope of the application is not defined yet, so as to keep it open.
+The Operational Analysis for this tutorial, identifies two Operational actors corresponding to two users, who will want to have the seat position adapted to their profile. One wants to give this instruction while seated inside the car, and the other remotely. Another Operational Entity is the vehicle, which must react to the user's input. The analysis can be summarized by the Operational Architecture Diagram shown below. Note that, at this stage, the scope of the application to be designed (or system) is not defined yet, so as to keep it open.
 
 ![Operational analysis](./img/operational-architecture-blank.png)
 
 ### System Analysis
 
-In the Arcadia methodology, the System Analysis aims at refininf the Operational Analysis, and defining the companion application's boundaries, and the functions it will perform for the stakeholder. At this stage, we focus on what the systmem will do, in a solution-neutral way.
+In the Arcadia methodology, the System Analysis aims at refining the Operational Analysis, and defining the Sytem of Interest's (here the Companion application) boundaries, namely the functions it will perform for the stakeholder. At this stage, the System is studied as a black box: we focus on what the system will do, in a solution-neutral way. 
 
-The diagram below from the Capella model represents these features at system level (the full Capella model can be found in folder "Seat adjuster application architecture"). It now introduces the System of interest, here the companion application, as an entity, whereas the Operational Analysis voluntarily leaves it out. It also defines a first, high-level allocation of functions to each entity.
+The diagram below from the Capella model represents these features at system level (the full Capella model can be found in the "Seat adjuster application architecture" folder). It now introduces the System of interest, here the companion application, as an entity, as opposed to the Operational Analysis where we voluntarily did not define it. It also defines a first, high-level allocation of functions to each entity.
 
-While defining the application's own capabilities in Capella's System Analysis level, we also determine that the application can accept or refuse the request in certain conditions, for instance, while the vehicle is moving. 
+At this stage, we decided to add a Client Application between the users and Companion Application, that will gather the inputs from the users and forward them to the Companion Application. This Client Application can for instance be an app running on a user's phone, or on the car's board computer. This addition corresponds to a design decision: The Companion Application will not be responsible for providing an interface to the users, but will only get standardized inputs from another application.
+
+While defining the Companion Application's own capabilities in Capella's System Analysis level, we also determine that the application can accept or refuse the request in certain conditions, for instance, while the vehicle is moving. 
 
 The diagram below from the Capella model represents these features at system level (the full Capella model can be found in folder "Seat adjuster application architecture").
 
@@ -57,9 +59,10 @@ The diagram below from the Capella model represents these features at system lev
 ### Logical Architecture
 
 After defining the application's functions in the System Analysis perspective of Arcadia, the Logical Architecture perspective helps design and define an architecture that enables the realization of these functions. 
-This perspective provides a first break-down of the system and a notional view of components without taking care yet of the technological detail (i.e. we do not yet try to decide what exactly each component will be).
+This perspective provides a first break-down of the system and a notional view of components without taking care yet of the technological detail (i.e. we do not yet try to decide what exactly each component will be, as this will be done in the next step). We also allocate the Functions to the Logical Components that we defined.
 
-In the Logical Architecture perspective, we give a first break-down of the application's architecture, i.e. of the way it will be constructed, and how the functions will be allocated to each part of the application.
+In this instance, we define three Logical Components: One will be responsible for commuincating with the Client App, one will manage the internal logics of the Companion Application (Input processor), and the last one will be in charge of communicating with the Vehicle. The definition of these components also goes with a further refinement of the functions.
+
 Note that, at this stage of the architecture design, we make the decision to break down the Actor "Vehicle" from the System Analysis into two Logical Actors, "Vehicle Abstraction Layer" and "Vehicle provider". 
 
 ![Logical architecture](./img/logical-architecture-blank.png)
@@ -68,7 +71,9 @@ Note that, at this stage of the architecture design, we make the decision to bre
 
 Finally, based on the abstract breakdown realized in the Logical Architecture, we can define the concrete Physical Components that will compose the system (despite their naming, Physical Components can be software as well as physical parts).
 
-The goal of the Physical Architecture is to extensively describe the final solution. It is at this stage that we can decide, for instance, that the "Vehicle Abstraction Layer" defined in the Logical Architecture will be a KUKSA Databroker, or that interface of the application with the user will be composed of MQTT Topics, and will communicate with the client through JSON requests etc.
+The goal of the Physical Architecture is to extensively describe the final solution, specifying in particular the specific technologies that will be used. It is at this stage that we can decide, for instance, that the "Vehicle Abstraction Layer" defined in the Logical Architecture will be a KUKSA Databroker, or that interface of the application with the user will be composed of MQTT Topics, and will communicate with the client through JSON requests etc.
+
+Once again, the definition of these Physical Components can go hand-in-hand with further refinement, or even the addition of some Functions. For example, as we now defined that the Companion Application will use MQTT, we also need to add Functions corresponding to the subscriptions to the relevant MQTT topics, that will take place at the initialization of the app.
 
 ![Physical architecture](./img/physical-architecture-blank.png)
 
