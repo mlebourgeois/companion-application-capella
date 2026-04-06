@@ -812,7 +812,7 @@
                   id="27b948dc-3e36-47c7-b0f6-cf36b918d2ee" name="FOP 1"/>
             </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="853e57a4-a8ab-4098-af74-fd5f6226fd4e" name="Send seat position to seat adjuster app">
+                id="853e57a4-a8ab-4098-af74-fd5f6226fd4e" name="Send vehicle state to seat adjuster app">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="ea0c57c8-f602-44d4-a2cd-d84c60547982" name="FIP 1"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -959,7 +959,7 @@
                 id="bec82873-82a4-4975-a681-58abbfb25a54" name="FIP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="3432a0af-a448-4fd7-9090-01f68964efb1" name="Provide current seat position">
+              id="3432a0af-a448-4fd7-9090-01f68964efb1" name="Provide current vehicle state">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="18295878-7593-4ebc-a0a0-24109574b6fc" name="FOP 1"/>
           </ownedFunctions>
@@ -1003,7 +1003,7 @@
                 sourceElement="#97f0d380-3162-491c-917d-8b478fbfeaed"/>
           </ownedFunctionalExchanges>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="ea1fa03e-bd06-437c-8126-d42cc911b95d" name="Seat position" target="#79991390-ce83-44a8-bbd0-a9b48b422f29"
+              id="ea1fa03e-bd06-437c-8126-d42cc911b95d" name="Vehicle state" target="#79991390-ce83-44a8-bbd0-a9b48b422f29"
               source="#3dfdec5b-b245-4fff-b49c-a026e117dc72"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="b04b2f54-c900-4881-bc94-afc306f0909c" name="Seat position" target="#e1b2e35b-0b63-476f-b025-85b77e44c6ad"
@@ -1030,7 +1030,7 @@
               id="a9f4d721-d272-48cd-a8c9-9f591148adbe" name="Target position" target="#bec82873-82a4-4975-a681-58abbfb25a54"
               source="#c3eff9ad-6542-45e1-afe5-d16f30b687c0"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="71e7ca6b-5faa-4002-a605-210e5615a090" name="Seat position" target="#ea0c57c8-f602-44d4-a2cd-d84c60547982"
+              id="71e7ca6b-5faa-4002-a605-210e5615a090" name="Vehicle state" target="#ea0c57c8-f602-44d4-a2cd-d84c60547982"
               source="#18295878-7593-4ebc-a0a0-24109574b6fc"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
@@ -1062,7 +1062,7 @@
                 id="4287bd77-c27d-407d-8e74-dbf6d4ef5b58" name="Vehicle Abstraction layer"
                 representedInstance="#7e30d7de-d2b9-4483-9ee5-7482d137255f"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
-                id="65461ab7-9c85-452f-bb3d-96789d2a2eca" name="Seat position" kind="ASYNCHRONOUS_CALL"
+                id="65461ab7-9c85-452f-bb3d-96789d2a2eca" name="Vehicle state" kind="ASYNCHRONOUS_CALL"
                 sendingEnd="#1bed7f6d-5fe7-48ec-abcd-ab507c250987" receivingEnd="#59d6201b-f064-490d-90af-66beec648398"/>
             <ownedMessages xsi:type="org.polarsys.capella.core.data.interaction:SequenceMessage"
                 id="6ba0c146-3186-4541-b237-682527faf9af" name="User request" kind="ASYNCHRONOUS_CALL"
