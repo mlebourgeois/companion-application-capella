@@ -59,11 +59,11 @@ The diagram below from the Capella model represents these features at system lev
 ### Logical Architecture
 
 After defining the application's functions in the System Analysis perspective of Arcadia, the Logical Architecture perspective helps design and define an architecture that enables the realization of these functions. 
-This perspective provides a first break-down of the system and a notional view of components without taking care yet of the technological detail (i.e. we do not yet try to decide what exactly each component will be, as this will be done in the next step). We also allocate the Functions to the Logical Components that we defined.
+This perspective provides a first break-down of the system and a notional view of components without specifying the technological detail yet (i.e. we do not yet try to decide what exactly each component will be, as this will be done in the next step). We also allocate the Functions to the Logical Components that we defined.
 
-In this instance, we define three Logical Components: One will be responsible for commuincating with the Client App, one will manage the internal logics of the Companion Application (Input processor), and the last one will be in charge of communicating with the Vehicle. The definition of these components also goes with a further refinement of the functions.
+In this instance, we define three Logical Components: One will be responsible for the interface with the Client App, one will manage the commands that are sent to the seat (Seat command controller), and the last one will be in charge of communicating with the Vehicle. The definition of these components also goes with a further refinement of the functions.
 
-Note that, at this stage of the architecture design, we make the decision to break down the Actor "Vehicle" from the System Analysis into two Logical Actors, "Vehicle Abstraction Layer" and "Vehicle provider". 
+Note that, at this stage of the architecture design, we make the decision to break down the Actor "Vehicle" from the System Analysis into two Logical Actors, "Vehicle Abstraction Layer" and "Vehicle provider".
 
 ![Logical architecture](./img/logical-architecture-blank.png)
 
@@ -71,9 +71,12 @@ Note that, at this stage of the architecture design, we make the decision to bre
 
 Finally, based on the abstract breakdown realized in the Logical Architecture, we can define the concrete Physical Components that will compose the system (despite their naming, Physical Components can be software as well as physical parts).
 
-The goal of the Physical Architecture is to extensively describe the final solution, specifying in particular the specific technologies that will be used. It is at this stage that we can decide, for instance, that the "Vehicle Abstraction Layer" defined in the Logical Architecture will be a KUKSA Databroker, or that interface of the application with the user will be composed of MQTT Topics, and will communicate with the client through JSON requests etc.
+The goal of the Physical Architecture is to extensively describe the final solution, specifying in particular the specific technologies that will be used. It is at this stage that we can decide, for instance, that the "Vehicle Abstraction Layer" defined in the Logical Architecture will be a KUKSA Databroker, or that interface of the application with the user will rely on the MQTT protocol, using JSON to communicate with the client app etc.  
 
-Once again, the definition of these Physical Components can go hand-in-hand with further refinement, or even the addition of some Functions. For example, as we now defined that the Companion Application will use MQTT, we also need to add Functions corresponding to the subscriptions to the relevant MQTT topics, that will take place at the initialization of the app.
+In the Physical Architecture, the Arcadia method defines a distinctions between two types of Physical Components: Behavior Physical Components are responsible for performing the functions, and are deployed onto Node Physical Components. Node Physical Components embed Behavior Physical Components and provide them with resources to perform their functions.
+In this example, we choose to model a case where the seat adjuster app is deployed onto a Raspberry Pi, which will therefore be the Node PC. Using Docker (for example) or other alternatives presented for example in the [seat adjuster deployment](./deploy-seat-adjuster.md) would have been possible as well. For more complex systems, deploying different parts of the systems on different Nodes would of course be possible.
+
+Once again, the definition of these Physical Components can go hand-in-hand with further refinement, or even the addition of some Functions. For example, choosing the MQTT protocol leads us to add an additional functional chain to model its initialization step when the app is launched. 
 
 ![Physical architecture](./img/physical-architecture-blank.png)
 
