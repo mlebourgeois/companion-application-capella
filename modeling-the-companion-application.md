@@ -23,11 +23,15 @@ For more information about the Arcadia methodology, you can for instance refer t
 To run Capella, go to the download page (https://mbse-capella.org/download.html) and download the zip corresponding to the latest release of Capella.
 Once the download is complete, you can simply unzip it to the location of your choice (preferably using 7zip). Then, run capella.exe in the Capella folder.
 
+Note: The model attached to this tutorial was built using **Capella 7.0.1**. If this is no longer the newest release, but you still prefer to use this specific one, you can download from the download page as well, by firts scrolling down and using the link to "Previous versions". Then, select v7.0.1, download the product, then unzip and run it similarly. 
+
 ### Opening the Capella model
 
 To open the Capella model, check first that you have the folder locally saved on your device.
 Then, in Capella, go to the File menu and select "Open Projects from File System", then click the Directory button, select the root directory in which the .aird file of the project is contained, and click "Finish".
 You can then open the project and show the diagrams by double-clicking the .aird file of the project.
+
+If you are using a newer version than the one used to create this model, you might have to migrate it to the current version. To do this, simply click on the root folder in the project explorer, then select Migration/Migrate Project toward current version.
 
 
 ## High-level architecture design with Capella
