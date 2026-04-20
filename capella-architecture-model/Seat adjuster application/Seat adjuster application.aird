@@ -81,11 +81,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Functional%20Chain%20Description']"/>
         <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Seat%20adjuster%20application.capella#101ff5d2-0410-41d6-867e-5588ea27d84d"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_kj8aAJIsEe-yNuruoI9Vzw" name="[FS] Adapt seat position to the driver" repPath="#_kjyB8JIsEe-yNuruoI9Vzw" changeId="1729790585945">
-        <description xmi:type="description_2:SequenceDiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Functional%20Scenario']"/>
-        <target xmi:type="org.polarsys.capella.core.data.interaction:Scenario" href="Seat%20adjuster%20application.capella#5f5a4c43-152a-4a9b-892d-007e42fba859"/>
-      </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_lXIxgJIsEe-yNuruoI9Vzw" name="[ES] Adapt seat position to the driver" repPath="#_lXGVQJIsEe-yNuruoI9Vzw" changeId="1738188963052">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_lXIxgJIsEe-yNuruoI9Vzw" name="[ES] Adapt seat position to the driver" repPath="#_lXGVQJIsEe-yNuruoI9Vzw" changeId="1776721546276">
         <description xmi:type="description_2:SequenceDiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']"/>
         <target xmi:type="org.polarsys.capella.core.data.interaction:Scenario" href="Seat%20adjuster%20application.capella#bc1c3ffb-3e00-4f82-9346-7c1ea34c9176"/>
       </ownedRepresentationDescriptors>
@@ -105,14 +101,14 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Functional%20Chain%20Description']"/>
         <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Seat%20adjuster%20application.capella#2740c585-3754-4531-8ebb-5885c3fdc7b6"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_TX-7cDnVEfG2UcZ_G6tvxQ" name="[PFCD] MQQT Initialization" repPath="#_TX9GQDnVEfG2UcZ_G6tvxQ" changeId="1776372474651">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_TX-7cDnVEfG2UcZ_G6tvxQ" name="[PFCD] MQTT Initialization" repPath="#_TX9GQDnVEfG2UcZ_G6tvxQ" changeId="1776372474651">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Functional%20Chain%20Description']"/>
         <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Seat%20adjuster%20application.capella#533910df-4c7f-487e-af53-db3978c1d0e1"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_l1hxAJFYEe-YXLa4150w9A">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_5rXioJLPEe-JJtj6_BLMSw" name="[PAB] Structure" repPath="#_5rRcAJLPEe-JJtj6_BLMSw" changeId="1776372901538">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_5rXioJLPEe-JJtj6_BLMSw" name="[PAB] Structure" repPath="#_5rRcAJLPEe-JJtj6_BLMSw" changeId="1776721893222">
         <eAnnotations xmi:type="description:DAnnotation" uid="_5rbNAJLPEe-JJtj6_BLMSw" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5rbNAZLPEe-JJtj6_BLMSw" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5rbNApLPEe-JJtj6_BLMSw" key="hide.computed.physical.links.filter" value="true"/>
@@ -6490,21 +6486,6 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Functional%20Chain%20Description']/@defaultLayer"/>
     <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Seat%20adjuster%20application.capella#101ff5d2-0410-41d6-867e-5588ea27d84d"/>
   </diagram:DSemanticDiagram>
-  <sequence:SequenceDDiagram uid="_kjyB8JIsEe-yNuruoI9Vzw">
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_kj-2QJIsEe-yNuruoI9Vzw" source="GMF_DIAGRAMS">
-      <data xmi:type="notation:Diagram" xmi:id="_kj-2QZIsEe-yNuruoI9Vzw" type="Sirius" element="_kjyB8JIsEe-yNuruoI9Vzw" measurementUnit="Pixel">
-        <styles xmi:type="notation:DiagramStyle" xmi:id="_kj-2QpIsEe-yNuruoI9Vzw"/>
-      </data>
-    </ownedAnnotationEntries>
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_kkSYQJIsEe-yNuruoI9Vzw" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_kkSYQZIsEe-yNuruoI9Vzw"/>
-    </ownedAnnotationEntries>
-    <description xmi:type="description_2:SequenceDiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Functional%20Scenario']"/>
-    <activatedFilters xmi:type="filter:CompositeFilterDescription" href="platform:/plugin/org.polarsys.kitalpha.ad.integration.sirius/description/ad.odesign#//@ownedViewpoints[name='ad']/@ownedRepresentations[name='AD%20diagram']/@filters[name='ModelExtensionFilter']"/>
-    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_kj2TYJIsEe-yNuruoI9Vzw"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Functional%20Scenario']/@defaultLayer"/>
-    <target xmi:type="org.polarsys.capella.core.data.interaction:Scenario" href="Seat%20adjuster%20application.capella#5f5a4c43-152a-4a9b-892d-007e42fba859"/>
-  </sequence:SequenceDDiagram>
   <sequence:SequenceDDiagram uid="_lXGVQJIsEe-yNuruoI9Vzw">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_lXJ_oJIsEe-yNuruoI9Vzw" source="GMF_DIAGRAMS">
       <data xmi:type="notation:Diagram" xmi:id="_lXJ_oZIsEe-yNuruoI9Vzw" type="Sirius" element="_lXGVQJIsEe-yNuruoI9Vzw" measurementUnit="Pixel">
@@ -6568,20 +6549,9 @@
               <children xmi:type="notation:Node" xmi:id="_gy3qM5IuEe-yNuruoI9Vzw" type="5001">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_gy3qNJIuEe-yNuruoI9Vzw" x="-1"/>
               </children>
-              <children xmi:type="notation:Node" xmi:id="_gy4RQJIuEe-yNuruoI9Vzw" type="3003" element="_oGXAgN6OEe-8jc2-uVD-jg">
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_gy4RQZIuEe-yNuruoI9Vzw" fontName="Segoe UI"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gy4RQpIuEe-yNuruoI9Vzw"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_mh6QoJIuEe-yNuruoI9Vzw" type="3001" element="_oGY1sN6OEe-8jc2-uVD-jg">
-                <children xmi:type="notation:Node" xmi:id="_mh6Qo5IuEe-yNuruoI9Vzw" type="5001">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_mh6QpJIuEe-yNuruoI9Vzw" y="5"/>
-                </children>
-                <children xmi:type="notation:Node" xmi:id="_mh6QpZIuEe-yNuruoI9Vzw" type="3003" element="_oGaq4N6OEe-8jc2-uVD-jg">
-                  <styles xmi:type="notation:ShapeStyle" xmi:id="_mh6QppIuEe-yNuruoI9Vzw" fontName="Segoe UI"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mh6Qp5IuEe-yNuruoI9Vzw"/>
-                </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_mh6QoZIuEe-yNuruoI9Vzw" fontColor="3038217" fontName="Segoe UI" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mh6QopIuEe-yNuruoI9Vzw" x="-45" y="15" width="100" height="30"/>
+              <children xmi:type="notation:Node" xmi:id="_ScyYED0CEfGhjt5QQfmVRA" type="3003" element="_ScZWgT0CEfGhjt5QQfmVRA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_ScyYET0CEfGhjt5QQfmVRA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ScyYEj0CEfGhjt5QQfmVRA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_gy3qMZIuEe-yNuruoI9Vzw" fontColor="3038217" fontName="Segoe UI" fontHeight="8"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gy3qMpIuEe-yNuruoI9Vzw" x="-43" y="359" width="10" height="57"/>
@@ -7070,7 +7040,7 @@
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_lXL00JIsEe-yNuruoI9Vzw" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_lXL00ZIsEe-yNuruoI9Vzw"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oGIXAN6OEe-8jc2-uVD-jg" name="Vehicle user" width="10" height="5" resizeKind="EAST_WEST">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oGIXAN6OEe-8jc2-uVD-jg" name="Client application" width="10" height="5" resizeKind="EAST_WEST">
       <target xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Seat%20adjuster%20application.capella#09aa6be2-1f03-4573-b270-d357999585d9"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Seat%20adjuster%20application.capella#09aa6be2-1f03-4573-b270-d357999585d9"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Seat%20adjuster%20application.capella#d8620247-f1a8-497c-ac5f-a566d54e8b94"/>
@@ -7085,15 +7055,8 @@
           <target xmi:type="org.polarsys.capella.core.data.interaction:Execution" href="Seat%20adjuster%20application.capella#1b878abc-aff8-42c4-8ad8-99a2ad129b1f"/>
           <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:Execution" href="Seat%20adjuster%20application.capella#1b878abc-aff8-42c4-8ad8-99a2ad129b1f"/>
           <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" uid="_gzCpUJIuEe-yNuruoI9Vzw" x="95" y="459" height="57" width="10"/>
-          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGY1sN6OEe-8jc2-uVD-jg" name="See target position" width="10" height="3" resizeKind="NSEW">
-            <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" uid="_mhkSY5IuEe-yNuruoI9Vzw" x="50" y="474" height="30" width="100"/>
-            <ownedStyle xmi:type="diagram:Square" uid="_oGaq4N6OEe-8jc2-uVD-jg" showIcon="false" labelColor="9,92,46" borderSize="1" borderSizeComputationExpression="1" borderColor="9,92,46" labelPosition="node" width="10" height="3" color="197,255,166">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']/@borderedNodeMappings[name='Execution%20DF']/@borderedNodeMappings[name='InteractionStateFunction']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_2:StateMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']/@borderedNodeMappings[name='Execution%20DF']/@borderedNodeMappings[name='InteractionStateFunction']"/>
-          </ownedBorderedNodes>
-          <ownedStyle xmi:type="diagram:Square" uid="_oGXAgN6OEe-8jc2-uVD-jg" labelColor="9,92,46" borderSize="1" borderSizeComputationExpression="1" borderColor="9,92,46" width="1" height="3" color="197,255,166">
-            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']/@borderedNodeMappings[name='Execution%20DF']/@conditionnalStyles.1/@style"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_ScZWgT0CEfGhjt5QQfmVRA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="74,74,151" width="1" height="3" color="150,177,218">
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']/@borderedNodeMappings[name='Execution%20DF']/@conditionnalStyles.3/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_2:ExecutionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']/@borderedNodeMappings[name='Execution%20DF']"/>
         </ownedBorderedNodes>
@@ -7101,7 +7064,7 @@
           <target xmi:type="org.polarsys.capella.core.data.interaction:Execution" href="Seat%20adjuster%20application.capella#e98af64e-0c89-4f71-aeac-fed9dc594ae5"/>
           <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:Execution" href="Seat%20adjuster%20application.capella#e98af64e-0c89-4f71-aeac-fed9dc594ae5"/>
           <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" uid="_fVBzMJIuEe-yNuruoI9Vzw" x="95" y="541" height="81" width="10"/>
-          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGaq4t6OEe-8jc2-uVD-jg" name="See response" width="10" height="3" resizeKind="NSEW">
+          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGaq4t6OEe-8jc2-uVD-jg" name="Get seat position" width="10" height="3" resizeKind="NSEW">
             <target xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#760d4835-d8bb-4056-b6c4-4bcb87cec13e"/>
             <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#760d4835-d8bb-4056-b6c4-4bcb87cec13e"/>
             <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="Seat%20adjuster%20application.capella#01a5b732-fe46-42d7-87d5-2987f5cc84d9"/>
@@ -7126,7 +7089,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_2:EndOfLifeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']/@borderedNodeMappings[name='endOfLifeDF']"/>
         </ownedBorderedNodes>
-        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGcgE96OEe-8jc2-uVD-jg" name="Give requests to app" width="10" height="3" resizeKind="NSEW">
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGcgE96OEe-8jc2-uVD-jg" name="Set position request" width="10" height="3" resizeKind="NSEW">
           <target xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#1036a646-3654-4dcf-a1cd-b71114629b35"/>
           <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#1036a646-3654-4dcf-a1cd-b71114629b35"/>
           <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="Seat%20adjuster%20application.capella#444712bb-46c0-42a6-8175-46f2e70b74b2"/>
@@ -7146,7 +7109,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:InstanceRoleMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oGKzQd6OEe-8jc2-uVD-jg" name="User interface" width="15" height="5" resizeKind="EAST_WEST">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oGKzQd6OEe-8jc2-uVD-jg" name="Client interface" width="15" height="5" resizeKind="EAST_WEST">
       <target xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Seat%20adjuster%20application.capella#fabe3a5c-717a-48f3-8575-e912fc8475df"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Seat%20adjuster%20application.capella#fabe3a5c-717a-48f3-8575-e912fc8475df"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Seat%20adjuster%20application.capella#a40f8aac-0a82-4882-b41b-652e3cd956bf"/>
@@ -7161,7 +7124,7 @@
           <target xmi:type="org.polarsys.capella.core.data.interaction:Execution" href="Seat%20adjuster%20application.capella#bb775d8d-2940-4fd7-9a28-28e84bae5a91"/>
           <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:Execution" href="Seat%20adjuster%20application.capella#bb775d8d-2940-4fd7-9a28-28e84bae5a91"/>
           <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" uid="_H6GPQJItEe-yNuruoI9Vzw" x="308" y="180" height="60" width="10"/>
-          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGduM96OEe-8jc2-uVD-jg" name="Get user input" width="10" height="3" resizeKind="NSEW">
+          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGduM96OEe-8jc2-uVD-jg" name="Get client request" width="10" height="3" resizeKind="NSEW">
             <target xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#9c36b664-f47c-48aa-a284-947970ed3e3b"/>
             <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#9c36b664-f47c-48aa-a284-947970ed3e3b"/>
             <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="Seat%20adjuster%20application.capella#b52a2bbd-9fca-4ee4-9544-64c7f85699ff"/>
@@ -7224,7 +7187,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:InstanceRoleMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oGMocN6OEe-8jc2-uVD-jg" name="Computer" width="15" height="5" resizeKind="EAST_WEST">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oGMocN6OEe-8jc2-uVD-jg" name="Seat command controller" width="15" height="5" resizeKind="EAST_WEST">
       <target xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Seat%20adjuster%20application.capella#ab35df0c-7c8b-4e07-9f1c-7e3f4422d7bf"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Seat%20adjuster%20application.capella#ab35df0c-7c8b-4e07-9f1c-7e3f4422d7bf"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Seat%20adjuster%20application.capella#9d94381b-69e5-4810-8210-001859227bac"/>
@@ -7248,7 +7211,7 @@
           <target xmi:type="org.polarsys.capella.core.data.interaction:Execution" href="Seat%20adjuster%20application.capella#d1f56398-dbc3-4dbd-99f7-71c479e1a53c"/>
           <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:Execution" href="Seat%20adjuster%20application.capella#d1f56398-dbc3-4dbd-99f7-71c479e1a53c"/>
           <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" uid="_XpZZsJItEe-yNuruoI9Vzw" x="468" y="257" height="84" width="10"/>
-          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGe8V96OEe-8jc2-uVD-jg" name="Check for errors" width="10" height="3" resizeKind="NSEW">
+          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGe8V96OEe-8jc2-uVD-jg" name="Check move conditions" width="10" height="3" resizeKind="NSEW">
             <target xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#a0eb0bc7-d26e-4340-be7e-75b3cbbcd991"/>
             <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#a0eb0bc7-d26e-4340-be7e-75b3cbbcd991"/>
             <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="Seat%20adjuster%20application.capella#7b232396-9ed5-4360-8002-1029a2aa3afd"/>
@@ -7273,7 +7236,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_2:EndOfLifeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']/@borderedNodeMappings[name='endOfLifeDF']"/>
         </ownedBorderedNodes>
-        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGfjZN6OEe-8jc2-uVD-jg" name="Set new target position" width="10" height="3" resizeKind="NSEW">
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGfjZN6OEe-8jc2-uVD-jg" name="Process new target position" width="10" height="3" resizeKind="NSEW">
           <target xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#fdae22fd-31e5-4d62-b4a8-692bbaac38d2"/>
           <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#fdae22fd-31e5-4d62-b4a8-692bbaac38d2"/>
           <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="Seat%20adjuster%20application.capella#5a4cc0b7-f15c-4a95-9e2e-957e337a9ff2"/>
@@ -7293,7 +7256,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:InstanceRoleMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oGNPgN6OEe-8jc2-uVD-jg" name="Communication with Cabin module" width="15" height="5" resizeKind="EAST_WEST">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oGNPgN6OEe-8jc2-uVD-jg" name="Communication with vehicle" width="15" height="5" resizeKind="EAST_WEST">
       <target xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Seat%20adjuster%20application.capella#71194826-a579-438d-8b3b-8bf2f433b5ce"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Seat%20adjuster%20application.capella#71194826-a579-438d-8b3b-8bf2f433b5ce"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Seat%20adjuster%20application.capella#470ca24f-e354-4940-9f16-4379144c6e4e"/>
@@ -7362,7 +7325,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:InstanceRoleMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oGN2kN6OEe-8jc2-uVD-jg" name="Cabin control" width="10" height="5" resizeKind="EAST_WEST">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_oGN2kN6OEe-8jc2-uVD-jg" name="Vehicle Abstraction layer" width="10" height="5" resizeKind="EAST_WEST">
       <target xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Seat%20adjuster%20application.capella#4287bd77-c27d-407d-8e74-dbf6d4ef5b58"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:InstanceRole" href="Seat%20adjuster%20application.capella#4287bd77-c27d-407d-8e74-dbf6d4ef5b58"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Seat%20adjuster%20application.capella#7e30d7de-d2b9-4483-9ee5-7482d137255f"/>
@@ -7377,7 +7340,7 @@
           <target xmi:type="org.polarsys.capella.core.data.interaction:Execution" href="Seat%20adjuster%20application.capella#18516fad-aa0e-4480-9747-492ef5bfcc4a"/>
           <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:Execution" href="Seat%20adjuster%20application.capella#18516fad-aa0e-4480-9747-492ef5bfcc4a"/>
           <graphicalFilters xmi:type="diagram:AbsoluteBoundsFilter" uid="_JYviEJIuEe-yNuruoI9Vzw" x="865" y="574" height="66" width="10"/>
-          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGh_qN6OEe-8jc2-uVD-jg" name="Move seat to target position" width="10" height="3" resizeKind="NSEW">
+          <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGh_qN6OEe-8jc2-uVD-jg" name="Receive new target position" width="10" height="3" resizeKind="NSEW">
             <target xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#15e4fc2c-69b4-470a-9ee6-1fabb46887c4"/>
             <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#15e4fc2c-69b4-470a-9ee6-1fabb46887c4"/>
             <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="Seat%20adjuster%20application.capella#08fffee9-7d4e-44ec-86fb-5c466b3edbba"/>
@@ -7402,7 +7365,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_2:EndOfLifeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20DF']/@borderedNodeMappings[name='default%20execution%20DF']/@borderedNodeMappings[name='endOfLifeDF']"/>
         </ownedBorderedNodes>
-        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGj00d6OEe-8jc2-uVD-jg" name="Inform seat adjuster of vehicle state" width="10" height="3" resizeKind="NSEW">
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oGj00d6OEe-8jc2-uVD-jg" name="Send vehicle state" width="10" height="3" resizeKind="NSEW">
           <target xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#21c22afe-2465-42f9-a091-8c4c150c7dca"/>
           <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:StateFragment" href="Seat%20adjuster%20application.capella#21c22afe-2465-42f9-a091-8c4c150c7dca"/>
           <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="Seat%20adjuster%20application.capella#853e57a4-a8ab-4098-af74-fd5f6226fd4e"/>
@@ -7474,7 +7437,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@edgeMappings[name='Basic%20message%20mapping%20DF']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_oGrwqt6OEe-8jc2-uVD-jg" name="errors" sourceNode="_oGe8VN6OEe-8jc2-uVD-jg" targetNode="_oGduMN6OEe-8jc2-uVD-jg">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_oGrwqt6OEe-8jc2-uVD-jg" name="Conditions NOK" sourceNode="_oGe8VN6OEe-8jc2-uVD-jg" targetNode="_oGduMN6OEe-8jc2-uVD-jg">
       <target xmi:type="org.polarsys.capella.core.data.interaction:SequenceMessage" href="Seat%20adjuster%20application.capella#0967a5ad-36ef-49b9-ab94-5d42f80d9e20"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:SequenceMessage" href="Seat%20adjuster%20application.capella#0967a5ad-36ef-49b9-ab94-5d42f80d9e20"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:MessageEnd" href="Seat%20adjuster%20application.capella#93e4557e-7e77-4bc3-a393-e1110f8cb454"/>
@@ -7513,7 +7476,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_2:BasicMessageMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']/@defaultLayer/@edgeMappings[name='Basic%20message%20mapping%20DF']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_oGsXvN6OEe-8jc2-uVD-jg" name="Target position" sourceNode="_oGduNt6OEe-8jc2-uVD-jg" targetNode="_oGWZcN6OEe-8jc2-uVD-jg">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_oGsXvN6OEe-8jc2-uVD-jg" name="&lt;undefined>" sourceNode="_oGduNt6OEe-8jc2-uVD-jg" targetNode="_oGWZcN6OEe-8jc2-uVD-jg">
       <target xmi:type="org.polarsys.capella.core.data.interaction:SequenceMessage" href="Seat%20adjuster%20application.capella#26f3fe0c-c573-48ae-a48d-3251add1cb41"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:SequenceMessage" href="Seat%20adjuster%20application.capella#26f3fe0c-c573-48ae-a48d-3251add1cb41"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.interaction:MessageEnd" href="Seat%20adjuster%20application.capella#9781d805-c16b-4f40-bc57-71559c519f31"/>
@@ -12673,7 +12636,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@nodeMappings[name='PAB_FunctionalChainEnd']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_sP3VUC7wEfG4284nOKcwtg" name="MQQT Initialization" width="2" height="2" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_sP3VUC7wEfG4284nOKcwtg" name="MQTT Initialization" width="2" height="2" resizeKind="NSEW">
       <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Seat%20adjuster%20application.capella#533910df-4c7f-487e-af53-db3978c1d0e1"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Seat%20adjuster%20application.capella#533910df-4c7f-487e-af53-db3978c1d0e1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_sP38YC7wEfG4284nOKcwtg" borderSize="1" borderSizeComputationExpression="1" width="2" height="2" color="160,32,240">

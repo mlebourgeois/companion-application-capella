@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--Capella_Version_7.0.0-->
+<!--Capella_Version_7.0.1-->
 <org.polarsys.capella.core.data.capellamodeller:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/7.0.0"
     xmlns:org.polarsys.capella.core.data.capellacommon="http://www.polarsys.org/capella/core/common/7.0.0"
@@ -1762,7 +1762,7 @@
                 source="#ce8f5fc6-eb24-44ec-9189-d7f08629962b" target="#9f7cc78a-cac7-4316-b27e-e3794c1f59e1"/>
           </ownedFunctionalChains>
           <ownedFunctionalChains xsi:type="org.polarsys.capella.core.data.fa:FunctionalChain"
-              id="533910df-4c7f-487e-af53-db3978c1d0e1" name="MQQT Initialization">
+              id="533910df-4c7f-487e-af53-db3978c1d0e1" name="MQTT Initialization">
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
                 id="3699115e-0a91-43b2-be37-2b9066647aea" involved="#866cdce5-d350-45dd-9657-f913b607bc8a"/>
             <ownedFunctionalChainInvolvements xsi:type="org.polarsys.capella.core.data.fa:FunctionalChainInvolvementFunction"
